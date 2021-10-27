@@ -71,6 +71,7 @@ public class Player {
         this.email = ((Player) options.getSnapshots().get(0)).email;
         this.username = ((Player) options.getSnapshots().get(0)).username;
         this.money = ((Player) options.getSnapshots().get(0)).money;
+        this.leaderboards = ((Player) options.getSnapshots().get(0)).leaderboards;
 
     }
 }

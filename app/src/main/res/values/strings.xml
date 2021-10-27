@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">monsterrun</string>
+    <string name="example">some text</string>
 </resources>
