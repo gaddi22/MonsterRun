@@ -6,7 +6,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Leaderboard {
+public class Leaderboard implements DataObject {
     private DatabaseReference leaderboardRef;
     private DatabaseReference mDatabaseRef;
 
@@ -20,12 +20,16 @@ public class Leaderboard {
         leaderboardID = leaderboardRef.getKey();
     }
 
+    @Override
     public void update(){
         leaderboardRef = mDatabaseRef.push();
         leaderboardRef.child("rewards").setValue(rewards);
         leaderboardRef.child("leaderboardID").setValue(leaderboardID);
     }
 
+    @Override
+    public void sync(){
+        //TODO: download server data
 
-
+    }
 }

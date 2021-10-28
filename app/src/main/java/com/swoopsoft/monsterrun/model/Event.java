@@ -6,7 +6,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-public class Event {
+public class Event implements DataObject{
 
     private DatabaseReference eventRef;
     private DatabaseReference mDatabaseRef;
@@ -25,6 +25,7 @@ public class Event {
         this.end_date = end_date;
     }
 
+    @Override
     public void update(){
         eventRef = mDatabaseRef.push();
         eventRef.child("name").setValue(name);
@@ -32,5 +33,10 @@ public class Event {
         eventRef.child("end_Date").setValue(end_date);
     }
 
+    @Override
+    public void sync(){
+        //TODO: download server data
+
+    }
 
 }

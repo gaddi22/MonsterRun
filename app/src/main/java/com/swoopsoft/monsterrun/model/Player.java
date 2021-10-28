@@ -16,7 +16,7 @@ import java.util.Map;
 import com.firebase.ui.*;
 import com.google.firebase.database.Query;
 
-public class Player {
+public class Player implements DataObject{
     private DatabaseReference userRef;
 
     public Map<String, Object> statistics;
@@ -38,6 +38,7 @@ public class Player {
     }
 
     /*Update and Sync Methods*/
+    @Override
     public void update(){
         userRef.child("statistics").setValue(statistics);
         userRef.child("id").setValue(id);
@@ -48,6 +49,7 @@ public class Player {
 
     }
 
+    @Override
     //updates this class with values from the database
     public void sync(){
         Query queryRef = userRef.orderByChild("id").equalTo(id).limitToFirst(1);
