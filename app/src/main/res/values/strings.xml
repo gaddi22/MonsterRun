@@ -27,11 +27,11 @@
 
 
     /* Activity Settings */
-    <string name="textView14">Settings</string>
-    <string name="textView8">Sound Effects:</string>
-    <string name="textView9">Personalized Offers:</string>
-    <string name="textView10">Connect to Facebook:</string>
-    <string name="textView11">Language:</string>
+    <string name="textView8">Settings</string>
+    <string name="textView9">Sound Effects:</string>
+    <string name="textView10">Personalized Offers:</string>
+    <string name="textView11">Connect to Facebook:</string>
+    <string name="textView12">Language:</string>
     <string name="textView13">Change Nickname:</string>
 
 
