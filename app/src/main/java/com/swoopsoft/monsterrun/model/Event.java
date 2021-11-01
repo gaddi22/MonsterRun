@@ -17,8 +17,8 @@ public class Event implements DataObject{
     public Date end_date;
 
     public Event(String id, String name, Date start_date, Date end_date){
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("leaderboards");
-        eventRef = FirebaseDatabase.getInstance().getReference("leaderboards/"+eventid);
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("events");
+        eventRef = FirebaseDatabase.getInstance().getReference("events/"+eventid);
         eventid = eventRef.getKey();
         this.name = name;
         this.start_date = start_date;
