@@ -11,7 +11,7 @@
       android:id="@+id/button4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Update"
+      android:text="@string/button4"
       tools:layout_editor_absoluteX="131dp"
       tools:layout_editor_absoluteY="591dp" />
 
@@ -19,30 +19,30 @@
       android:id="@+id/textView8"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Sound Effects"
+      android:text="@string/textView8"
       app:layout_constraintBottom_toTopOf="@+id/textView9"
       app:layout_constraintEnd_toStartOf="@+id/switch1"
+      app:layout_constraintHorizontal_bias="0.444"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView14" />
+      app:layout_constraintTop_toBottomOf="@+id/textView14"
+      app:layout_constraintVertical_bias="0.518" />
 
   <Switch
       android:id="@+id/switch1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Switch"
       app:layout_constraintBottom_toTopOf="@+id/switch2"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.727"
+      app:layout_constraintHorizontal_bias="0.643"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView14"
-      app:layout_constraintVertical_bias="0.571" />
+      app:layout_constraintVertical_bias="0.464" />
 
   <Switch
       android:id="@+id/switch2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="128dp"
-      android:text="Switch"
       app:layout_constraintBottom_toTopOf="@+id/switch3"
       app:layout_constraintTop_toBottomOf="@+id/imageView2"
       app:layout_constraintVertical_bias="0.205"
@@ -52,7 +52,6 @@
       android:id="@+id/switch3"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Switch"
       tools:layout_editor_absoluteX="235dp"
       tools:layout_editor_absoluteY="330dp" />
 
@@ -61,7 +60,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="128dp"
-      android:text="Personalized Offers"
+      android:text="@string/textView9"
       app:layout_constraintBottom_toTopOf="@+id/textView10"
       app:layout_constraintTop_toBottomOf="@+id/imageView2"
       app:layout_constraintVertical_bias="0.145"
@@ -71,15 +70,15 @@
       android:id="@+id/textView10"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Connect to Facebook"
-      tools:layout_editor_absoluteX="16dp"
+      android:text="@string/textView10"
+      tools:layout_editor_absoluteX="64dp"
       tools:layout_editor_absoluteY="338dp" />
 
   <TextView
       android:id="@+id/textView11"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Language"
+      android:text="@string/textView11"
       tools:layout_editor_absoluteX="17dp"
       tools:layout_editor_absoluteY="405dp" />
 
@@ -94,7 +93,7 @@
       android:id="@+id/textView13"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Change Nickname"
+      android:text="@string/textView13"
       tools:layout_editor_absoluteX="17dp"
       tools:layout_editor_absoluteY="462dp" />
 
@@ -109,18 +108,18 @@
       tools:layout_editor_absoluteY="462dp" />
 
   <Button
-      android:id="@+id/button"
+      android:id="@+id/button1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Help & Support"
+      android:text="@string/button1"
       tools:layout_editor_absoluteX="16dp"
       tools:layout_editor_absoluteY="531dp" />
 
   <Button
-      android:id="@+id/button2"
+      android:id="@+id/button5"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Notifications"
+      android:text="@string/button5"
       tools:layout_editor_absoluteX="235dp"
       tools:layout_editor_absoluteY="591dp" />
 
@@ -128,15 +127,15 @@
       android:id="@+id/button3"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Privacy"
+      android:text="@string/button3"
       tools:layout_editor_absoluteX="16dp"
       tools:layout_editor_absoluteY="591dp" />
 
   <Button
-      android:id="@+id/button5"
+      android:id="@+id/button2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Terms of Service"
+      android:text="@string/button2"
       tools:layout_editor_absoluteX="207dp"
       tools:layout_editor_absoluteY="531dp" />
 
@@ -144,7 +143,7 @@
       android:id="@+id/button6"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Rate This App"
+      android:text="@string/button5"
       tools:layout_editor_absoluteX="16dp"
       tools:layout_editor_absoluteY="650dp" />
 
@@ -152,7 +151,7 @@
       android:id="@+id/button7"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Delete Account"
+      android:text="@string/button6"
       tools:layout_editor_absoluteX="206dp"
       tools:layout_editor_absoluteY="650dp" />
 
@@ -170,8 +169,9 @@
       android:id="@+id/textView14"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Settings"
+      android:text="@string/textView14"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       tools:layout_editor_absoluteY="155dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

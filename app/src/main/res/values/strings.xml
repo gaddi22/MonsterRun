@@ -9,4 +9,40 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+
+
+
+
+/* Activity Register */
+    <string name="textView1">User Information</string>
+    <string name="textView2">Email:</string>
+    <string name="textView3">Gender:</string>
+    <string name="textView4">Password:</string>
+    <string name="textView5">Re-type Password:</string>
+    <string name="textView6">Nickname:</string>
+    <string name="textView7">Starting Difficulty:</string>
+
+
+
+
+    /* Activity Settings */
+    <string name="textView14">Settings</string>
+    <string name="textView8">Sound Effects:</string>
+    <string name="textView9">Personalized Offers:</string>
+    <string name="textView10">Connect to Facebook:</string>
+    <string name="textView11">Language:</string>
+    <string name="textView13">Change Nickname:</string>
+
+
+    /* Buttons */
+    <string name="button1">Help and Support</string>
+    <string name="button2">Terms of Service</string>
+    <string name="button3">Privacy</string>
+    <string name="button4">Update</string>
+    <string name="button5">Notifications</string>
+    <string name="button6">Rate This App</string>
+    <string name="button7">Delete Account</string>
+
+
 </resources>
