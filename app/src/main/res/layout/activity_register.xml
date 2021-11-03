@@ -7,35 +7,35 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="@string/textView2r"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+        android:text="@string/textViewemail"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEmail"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextEmail"
         app:layout_constraintVertical_bias="0.451" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView3r"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        android:text="@string/textViewgender"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextGender"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGender"
         app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/editTextGender"
         app:layout_constraintVertical_bias="0.419" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView4r"
+        android:text="@string/textViewpass"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintHorizontal_bias="0.153"
@@ -47,7 +47,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView5r"
+        android:text="@string/textViewrtpass"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
         app:layout_constraintHorizontal_bias="0.32"
@@ -59,7 +59,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView6r"
+        android:text="@string/textViewnick"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
         app:layout_constraintHorizontal_bias="0.163"
@@ -71,28 +71,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="488dp"
-        android:text="@string/textView7r"
+        android:text="@string/textViewdifficulty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editTextEmail"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginEnd="60dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGender"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGender"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextGender"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextGender"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginTop="244dp"
@@ -158,7 +158,7 @@
         android:id="@+id/textView1r"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:text="@string/textView1r"
+        android:text="@string/textViewregister"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -179,7 +179,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView8r"
+        android:text="@string/textVieweasy"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="645dp" />
 
@@ -187,7 +187,7 @@
         android:id="@+id/textView9"
         android:layout_width="100dp"
         android:layout_height="35dp"
-        android:text="@string/textView9r"
+        android:text="@string/textVieweasydesc"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="673dp" />
 
@@ -203,7 +203,7 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView10r"
+        android:text="@string/textViewmedium"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="647dp" />
 
@@ -211,7 +211,7 @@
         android:id="@+id/textView11"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="@string/textView11r"
+        android:text="@string/textViewmediumdesc"
         tools:layout_editor_absoluteX="143dp"
         tools:layout_editor_absoluteY="675dp" />
 
@@ -227,7 +227,7 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textView12r"
+        android:text="@string/textViewhard"
         tools:layout_editor_absoluteX="277dp"
         tools:layout_editor_absoluteY="643dp" />
 
@@ -235,7 +235,7 @@
         android:id="@+id/textView13"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="@string/textView13r"
+        android:text="@string/textViewharddesc"
         tools:layout_editor_absoluteX="276dp"
         tools:layout_editor_absoluteY="675dp" />
 

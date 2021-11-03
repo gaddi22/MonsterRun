@@ -12,29 +12,36 @@
 
 
     /* Activity Register */
-    <string name="textView1r">Settings</string>
-    <string name="textView2r">Email:</string>
-    <string name="textView3r">Gender:</string>
-    <string name="textView4r">Password:</string>
-    <string name="textView5r">Retype Password:</string>
-    <string name="textView6r">Nickname:</string>
-    <string name="textView7r">Starting Difficulty:</string>
-    <string name="textView8r">Easy</string>
-    <string name="textView9r">1 to 8,000 steps a day</string>
-    <string name="textView10r">Medium</string>
-    <string name="textView11r">8,000 to 12,000 setps a day</string>
-    <string name="textView12r">Hard</string>
-    <string name="textView13r">12,000 or more steps a day</string>
+    <string name="textViewregister">Register</string>
+    <string name="textViewemail">Email:</string>
+    <string name="textViewgender">Gender:</string>
+    <string name="textViewpass">Password:</string>
+    <string name="textViewrtpass">Retype Password:</string>
+    <string name="textViewnick">Nickname:</string>
+    <string name="textViewdifficulty">Starting Difficulty:</string>
+    <string name="textVieweasy">Easy</string>
+    <string name="textVieweasydesc">1 to 8,000 steps a day</string>
+    <string name="textViewmedium">Medium</string>
+    <string name="textViewmediumdesc">8,000 to 12,000 setps a day</string>
+    <string name="textViewhard">Hard</string>
+    <string name="textViewharddesc">12,000 or more steps a day</string>
 
     /* Activity Settings */
-    <string name="textView1se">12,000 or more steps a day</string>
-    <string name="textView2se">12,000 or more steps a day</string>
-    <string name="textView3se">12,000 or more steps a day</string>
-    <string name="textView4se">12,000 or more steps a day</string>
-    <string name="textView5se">12,000 or more steps a day</string>
-    <string name="textView6se">12,000 or more steps a day</string>
+    <string name="textView1se">Settings</string>
+    <string name="textView2se">Sound Effects:</string>
+    <string name="textView3se">Personalized Offers:</string>
+    <string name="textView4se">Connect to Facebook:</string>
+    <string name="textView5se">Languages:</string>
+    <string name="textView6se">Nickname:</string>
 
 
+    <string name="button1se">Help and Support</string>
+    <string name="button2se">Notifications</string>
+    <string name="button3se">Privacy</string>
+    <string name="button4se">Update</string>
+    <string name="button5se">Terms of Service</string>
+    <string name="button6se">Delete Account</string>
+    <string name="button7se">Rate This App</string>
 
 
     /* Activity Inventory */
