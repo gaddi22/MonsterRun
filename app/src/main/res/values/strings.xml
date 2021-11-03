@@ -27,21 +27,21 @@
     <string name="textViewharddesc">12,000 or more steps a day</string>
 
     /* Activity Settings */
-    <string name="textView1se">Settings</string>
-    <string name="textView2se">Sound Effects:</string>
-    <string name="textView3se">Personalized Offers:</string>
-    <string name="textView4se">Connect to Facebook:</string>
-    <string name="textView5se">Languages:</string>
-    <string name="textView6se">Nickname:</string>
+    <string name="textViewsettings">Settings</string>
+    <string name="textViewsound">Sound Effects:</string>
+    <string name="textViewoffers">Personalized Offers:</string>
+    <string name="textViewfacebook">Connect to Facebook:</string>
+    <string name="textViewlang">Languages:</string>
+    <string name="textViewnickname">Nickname:</string>
 
 
-    <string name="button1se">Help and Support</string>
-    <string name="button2se">Notifications</string>
-    <string name="button3se">Privacy</string>
-    <string name="button4se">Update</string>
-    <string name="button5se">Terms of Service</string>
-    <string name="button6se">Delete Account</string>
-    <string name="button7se">Rate This App</string>
+    <string name="buttonhelp">Help and Support</string>
+    <string name="buttonnotify">Notifications</string>
+    <string name="buttonprivacy">Privacy</string>
+    <string name="buttonupdate">Update</string>
+    <string name="buttontos">Terms of Service</string>
+    <string name="buttondelete">Delete Account</string>
+    <string name="buttonrate">Rate This App</string>
 
 
     /* Activity Inventory */
