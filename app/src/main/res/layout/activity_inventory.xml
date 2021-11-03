@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="52dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView1se"
         android:layout_width="130dp"
         android:layout_height="43dp"
         android:backgroundTint="@color/black"
@@ -38,7 +38,7 @@
             android:layout_height="73dp">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button4se"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/textView2i"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintEnd_toStartOf="@+id/button4se"
                 app:layout_constraintHorizontal_bias="0.382"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
                 tools:layout_editor_absoluteY="27dp" />
@@ -74,7 +74,7 @@
             android:layout_height="63dp">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button3se"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/textView3i"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintEnd_toStartOf="@+id/button3se"
                 app:layout_constraintHorizontal_bias="0.318"
                 app:layout_constraintStart_toEndOf="@+id/imageView7"
                 tools:layout_editor_absoluteY="20dp" />
@@ -106,7 +106,7 @@
             android:layout_height="64dp">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button2se"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -122,7 +122,7 @@
                 android:layout_marginEnd="44dp"
                 android:text="@string/textView4i"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintEnd_toStartOf="@+id/button2se"
                 app:layout_constraintHorizontal_bias="0.63"
                 app:layout_constraintStart_toEndOf="@+id/imageView8"
                 tools:layout_editor_absoluteY="23dp" />
@@ -139,7 +139,7 @@
             android:layout_height="57dp">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/button5se"
                 android:layout_width="87dp"
                 android:layout_height="46dp"
                 android:layout_marginEnd="16dp"
@@ -154,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/textView5i"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintEnd_toStartOf="@+id/button5se"
                 app:layout_constraintHorizontal_bias="0.25"
                 app:layout_constraintStart_toEndOf="@+id/imageView12"
                 tools:layout_editor_absoluteY="17dp" />
@@ -169,7 +169,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textView5se"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/textView6i"
