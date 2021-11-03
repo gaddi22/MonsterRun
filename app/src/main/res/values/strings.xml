@@ -12,21 +12,27 @@
 
 
     /* Activity Register */
-    <string name="textView1">Settings</string>
-    <string name="textView2">Email:</string>
-    <string name="textView3">Gender:</string>
-    <string name="textView4">Password:</string>
-    <string name="textView5">Retype Password:</string>
-    <string name="textView6">Nickname:</string>
-    <string name="textView7">Starting Difficulty:</string>
-    <string name="textView8">Easy</string>
-    <string name="textView9">1 to 8,000 steps a day</string>
-    <string name="textView10">Medium</string>
-    <string name="textView11">8,000 to 12,000 setps a day</string>
-    <string name="textView12">Hard</string>
-    <string name="textView13">12,000 or more steps a day</string>
+    <string name="textView1r">Settings</string>
+    <string name="textView2r">Email:</string>
+    <string name="textView3r">Gender:</string>
+    <string name="textView4r">Password:</string>
+    <string name="textView5r">Retype Password:</string>
+    <string name="textView6r">Nickname:</string>
+    <string name="textView7r">Starting Difficulty:</string>
+    <string name="textView8r">Easy</string>
+    <string name="textView9r">1 to 8,000 steps a day</string>
+    <string name="textView10r">Medium</string>
+    <string name="textView11r">8,000 to 12,000 setps a day</string>
+    <string name="textView12r">Hard</string>
+    <string name="textView13r">12,000 or more steps a day</string>
 
-
+    /* Activity Settings */
+    <string name="textView1se">12,000 or more steps a day</string>
+    <string name="textView2se">12,000 or more steps a day</string>
+    <string name="textView3se">12,000 or more steps a day</string>
+    <string name="textView4se">12,000 or more steps a day</string>
+    <string name="textView5se">12,000 or more steps a day</string>
+    <string name="textView6se">12,000 or more steps a day</string>
 
 
 
