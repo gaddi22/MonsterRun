@@ -40,4 +40,20 @@
     /* Activity Inventory */
     <string name="textView20" >ITEM SHOP</string>
     <string name="textView22" >YOUR ITEMS</string>
+    <string name="textView23" >mangy squirrel</string>
+    <string name="textView24" >pointy stick</string>
+    <string name="textView25" >dusty boots</string>
+    <string name="textView26" >water balloon</string>
+    <string name="textView27" >Quantity: 2</string>
+    <string name="textView28" >Quantity: 1</string>
+    <string name="textView29" >Quantity: 1</string>
+
+    /* Activity Login */
+    <string name="textView30" >EMAIL:</string>
+    <string name="textView31" >PASSWORD:</string>
+
+    /* Activity Main */
+    <string name="textView32" >monster activity titles</string>
+    <string name="textView33" >monster activity descriptions</string>
+
 </resources>
