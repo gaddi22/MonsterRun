@@ -32,22 +32,27 @@
 
 
     /* Activity Inventory */
-    <string name="textView20" >ITEM SHOP</string>
-    <string name="textView22" >YOUR ITEMS</string>
-    <string name="textView23" >mangy squirrel</string>
-    <string name="textView24" >pointy stick</string>
-    <string name="textView25" >dusty boots</string>
-    <string name="textView26" >water balloon</string>
-    <string name="textView27" >Quantity: 2</string>
-    <string name="textView28" >Quantity: 1</string>
-    <string name="textView29" >Quantity: 1</string>
+    <string name="textView1i" >ITEM SHOP</string>
+    <string name="textView6i" >YOUR ITEMS</string>
+    <string name="textView2i" >mangy squirrel</string>
+    <string name="textView3i" >pointy stick</string>
+    <string name="textView4i" >dusty boots</string>
+    <string name="textView5i" >water balloon</string>
+    <string name="textView7i" >Quantity: 2</string>
+    <string name="textView8i" >Quantity: 1</string>
+    <string name="textView9i" >Quantity: 1</string>
 
     /* Activity Login */
-    <string name="textView30" >EMAIL:</string>
-    <string name="textView31" >PASSWORD:</string>
+    <string name="textViewEmail" >EMAIL:</string>
+    <string name="textViewPassword" >PASSWORD:</string>
+    <string name="buttonRegister" >Register</string>
 
     /* Activity Main */
-    <string name="textView32" >monster activity titles</string>
-    <string name="textView33" >monster activity descriptions</string>
+    <string name="buttonInventory" >Inventory</string>
+    <string name="buttonTimeremaining" >Time Remaining</string>
+    <string name="buttonYourstats" >Log Out</string>
+    <string name="buttonLogout" >Your Stats</string>
+    <string name="textViewMonstertitle" >monster activity titles</string>
+    <string name="textViewMonsterdescriptions" >monster activity descriptions</string>
 
 </resources>

@@ -19,7 +19,7 @@
         android:layout_width="134dp"
         android:layout_height="49dp"
         android:layout_marginEnd="24dp"
-        android:text="Inventory"
+        android:text="@string/buttonInventory"
         app:layout_constraintEnd_toStartOf="@+id/button12"
         tools:layout_editor_absoluteY="118dp" />
 
@@ -28,9 +28,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="Your Stats"
+        android:text="@string/buttonYourstats"
         app:layout_constraintEnd_toEndOf="@+id/button10"
-        tools:layout_editor_absoluteY="169dp" />
+        tools:layout_editor_absoluteY="167dp" />
 
     <LinearLayout
         android:layout_width="409dp"
@@ -66,7 +66,7 @@
                         android:id="@+id/textView19"
                         android:layout_width="158dp"
                         android:layout_height="85dp"
-                        android:text="@string/textView32"
+                        android:text="@string/textViewMonstertitle"
                         android:textSize="16sp"
                         tools:layout_editor_absoluteX="16dp"
                         tools:layout_editor_absoluteY="8dp" />
@@ -80,7 +80,7 @@
                         android:id="@+id/textView20"
                         android:layout_width="142dp"
                         android:layout_height="79dp"
-                        android:text="@string/textView33"
+                        android:text="@string/textViewMonsterdescriptions"
                         android:textSize="16sp"
                         tools:layout_editor_absoluteX="29dp"
                         tools:layout_editor_absoluteY="8dp" />
@@ -94,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Time Remaining"
+        android:text="@string/buttonTimeremaining"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         tools:layout_editor_absoluteX="196dp" />
 
@@ -103,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="Log Out"
+        android:text="@string/buttonLogout"
         app:layout_constraintStart_toEndOf="@+id/button11"
         tools:layout_editor_absoluteY="169dp" />
 
