@@ -9,15 +9,23 @@ import java.util.Map;
 public class Leaderboard implements DataObject {
     private DatabaseReference leaderboardRef;
     private DatabaseReference mDatabaseRef;
+    private DatabaseReference progressRef;
 
     public Map<String, Object> rewards;
     public String leaderboardID;
+    public String statsistic;
+    public Map<String,Double> progress ; //PlayerID, Progress Amount
 
-    public Leaderboard(Map rewards){
+    public Leaderboard(Map rewards, String statsistic){
         mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("leaderboards");
         leaderboardRef = FirebaseDatabase.getInstance().getReference("leaderboards/"+leaderboardID);
+
         this.rewards=rewards;
+        this.statsistic = statsistic;
         leaderboardID = leaderboardRef.getKey();
+
+        //create progress tracker
+        progressRef = leaderboardRef.child("progress");
     }
 
     @Override

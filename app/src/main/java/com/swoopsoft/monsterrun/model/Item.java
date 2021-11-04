@@ -3,6 +3,10 @@ package com.swoopsoft.monsterrun.model;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class Item implements DataObject{
 
     private DatabaseReference itemRef;
@@ -10,10 +14,10 @@ public class Item implements DataObject{
 
     public String item;
     public String name;
-    public String abilities;
-    public String value;
+    public List abilities;   //Abilities list
+    public String value;    //Currency value
 
-    public Item(String name, String abilities, String value){
+    public Item(String name, List abilities, String value){
         mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("items");
         itemRef = FirebaseDatabase.getInstance().getReference("items/"+item);
         item = itemRef.getKey();

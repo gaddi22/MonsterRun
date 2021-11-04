@@ -24,11 +24,13 @@ public class Player implements DataObject{
     public String email;
     public String username;
     public double money;
+    private DatabaseReference progressRef;
 
     public List<Leaderboard> leaderboards;
 
     public Player(HashMap statistics, String id, String email, String username, double money, List<Leaderboard> leaderboards){
         userRef = FirebaseDatabase.getInstance().getReference("players/"+id);
+
         this.statistics=statistics;
         this.id=id;
         this.email=email;
