@@ -20,7 +20,7 @@
         android:layout_width="130dp"
         android:layout_height="43dp"
         android:backgroundTint="@color/black"
-        android:text="@string/textView1i"
+        android:text="@string/textViewItemshop"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="@color/black"
                 android:backgroundTintMode="src_in"
-                android:text="BUY"
+                android:text="@string/buttonBuyPlaceholder1"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -52,7 +52,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/textView2i"
+                android:text="@string/textViewSquirrel"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toStartOf="@+id/button4se"
                 app:layout_constraintHorizontal_bias="0.382"
@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="@color/black"
-                android:text="BUY"
+                android:text="@string/buttonBuyPlaceholder2"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteY="13dp" />
 
@@ -87,7 +87,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/textView3i"
+                android:text="@string/textViewStick"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toStartOf="@+id/button3se"
                 app:layout_constraintHorizontal_bias="0.318"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="@color/black"
-                android:text="BUY"
+                android:text="@string/buttonBuyPlaceholder3"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteY="8dp" />
 
@@ -120,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="44dp"
-                android:text="@string/textView4i"
+                android:text="@string/textViewBoots"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toStartOf="@+id/button2se"
                 app:layout_constraintHorizontal_bias="0.63"
@@ -144,7 +144,7 @@
                 android:layout_height="46dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="@color/black"
-                android:text="BUY"
+                android:text="@string/buttonBuyPlaceholder4"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteY="5dp" />
 
@@ -152,7 +152,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/textView5i"
+                android:text="@string/textViewBalloon"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toStartOf="@+id/button5se"
                 app:layout_constraintHorizontal_bias="0.25"
@@ -172,7 +172,7 @@
             android:id="@+id/textView5se"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="@string/textView6i"
+            android:text="@string/textViewYouritems"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -194,7 +194,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="16dp"
                         android:backgroundTint="@color/design_default_color_error"
-                        android:text="USE"
+                        android:text="@string/buttonUsePlaceholder1"
                         app:layout_constraintEnd_toEndOf="parent"
                         tools:layout_editor_absoluteY="8dp" />
 
@@ -202,7 +202,7 @@
                         android:id="@+id/textView17"
                         android:layout_width="102dp"
                         android:layout_height="25dp"
-                        android:text="@string/textView7i"
+                        android:text="@string/textViewQuantityPlaceholder1"
                         android:textSize="18sp"
                         app:layout_constraintEnd_toStartOf="@+id/button9"
                         app:layout_constraintHorizontal_bias="0.196"
@@ -211,7 +211,7 @@
 
                     <ImageView
                         android:id="@+id/imageView13"
-                        android:layout_width="142dp"
+                        android:layout_width="131dp"
                         android:layout_height="65dp"
                         app:srcCompat="@drawable/squirrel2" />
 
@@ -233,7 +233,7 @@
                         android:layout_height="48dp"
                         android:layout_marginEnd="16dp"
                         android:backgroundTint="@color/design_default_color_error"
-                        android:text="USE"
+                        android:text="@string/buttonUsePlaceholder2"
                         app:layout_constraintEnd_toEndOf="parent"
                         tools:layout_editor_absoluteY="16dp" />
 
@@ -241,7 +241,7 @@
                         android:id="@+id/textView15"
                         android:layout_width="116dp"
                         android:layout_height="24dp"
-                        android:text="@string/textView8i"
+                        android:text="@string/textViewQuantityPlaceholder2"
                         android:textSize="18sp"
                         app:layout_constraintEnd_toStartOf="@+id/button8"
                         app:layout_constraintHorizontal_bias="0.357"
@@ -253,7 +253,8 @@
                         android:layout_width="132dp"
                         android:layout_height="68dp"
                         app:srcCompat="@drawable/mushroom"
-                        tools:layout_editor_absoluteX="11dp" />
+                        tools:layout_editor_absoluteX="-1dp"
+                        tools:layout_editor_absoluteY="-4dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -269,7 +270,7 @@
                     android:layout_height="48dp"
                     android:layout_marginEnd="16dp"
                     android:backgroundTint="@color/design_default_color_error"
-                    android:text="USE"
+                    android:text="@string/buttonUsePlaceholder3"
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:layout_editor_absoluteY="12dp" />
 
@@ -278,7 +279,7 @@
                     android:layout_width="116dp"
                     android:layout_height="25dp"
                     android:layout_marginEnd="12dp"
-                    android:text="@string/textView9i"
+                    android:text="@string/textViewQuantityPlaceholder3"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/button9"
                     app:layout_constraintStart_toEndOf="@+id/imageView15"
@@ -286,10 +287,11 @@
 
                 <ImageView
                     android:id="@+id/imageView15"
-                    android:layout_width="129dp"
-                    android:layout_height="72dp"
+                    android:layout_width="136dp"
+                    android:layout_height="70dp"
                     app:srcCompat="@drawable/water_balloon"
-                    tools:layout_editor_absoluteX="14dp" />
+                    tools:layout_editor_absoluteX="-5dp"
+                    tools:layout_editor_absoluteY="0dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 

@@ -45,15 +45,22 @@
 
 
     /* Activity Inventory */
-    <string name="textView1i" >ITEM SHOP</string>
-    <string name="textView6i" >YOUR ITEMS</string>
-    <string name="textView2i" >mangy squirrel</string>
-    <string name="textView3i" >pointy stick</string>
-    <string name="textView4i" >dusty boots</string>
-    <string name="textView5i" >water balloon</string>
-    <string name="textView7i" >Quantity: 2</string>
-    <string name="textView8i" >Quantity: 1</string>
-    <string name="textView9i" >Quantity: 1</string>
+    <string name="textViewItemshop" >ITEM SHOP</string>
+    <string name="textViewYouritems" >YOUR ITEMS</string>
+    <string name="textViewSquirrel" >mangy squirrel</string>
+    <string name="textViewStick" >pointy stick</string>
+    <string name="textViewBoots" >dusty boots</string>
+    <string name="textViewBalloon" >water balloon</string>
+    <string name="textViewQuantityPlaceholder1" >Quantity: 2</string>
+    <string name="textViewQuantityPlaceholder2" >Quantity: 1</string>
+    <string name="textViewQuantityPlaceholder3" >Quantity: 1</string>
+    <string name="buttonBuyPlaceholder1" >BUY</string>
+    <string name="buttonBuyPlaceholder2" >BUY</string>
+    <string name="buttonBuyPlaceholder3" >BUY</string>
+    <string name="buttonBuyPlaceholder4" >BUY</string>
+    <string name="buttonUsePlaceholder1" >USE</string>
+    <string name="buttonUsePlaceholder2" >USE</string>
+    <string name="buttonUsePlaceholder3" >USE</string>
 
     /* Activity Login */
     <string name="textViewEmail" >EMAIL:</string>
