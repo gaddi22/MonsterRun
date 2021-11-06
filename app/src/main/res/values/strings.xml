@@ -70,8 +70,8 @@
     /* Activity Main */
     <string name="buttonInventory" >Inventory</string>
     <string name="buttonTimeremaining" >Time Remaining</string>
-    <string name="buttonYourstats" >Log Out</string>
-    <string name="buttonLogout" >Your Stats</string>
+    <string name="buttonLogOut" >Log Out</string>
+    <string name="buttonLeaderboard" >Leaderboard</string>
     <string name="textViewMonstertitle" >monster activity titles</string>
     <string name="textViewMonsterdescriptions" >monster activity descriptions</string>
 
