@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gaddi_000/StudioProjects/MonsterRun/app/src/main/res/layout/activity_register.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_inventory.xml" value="0.25" />
+        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_main.xml" value="0.2749094202898551" />
+        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_register.xml" value="0.28125" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

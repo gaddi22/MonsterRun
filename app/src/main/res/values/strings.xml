@@ -1,4 +1,77 @@
 <resources>
     <string name="app_name">monsterrun</string>
-    <string name="example">some text</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    /* Activity Register */
+    <string name="textViewregister">Register</string>
+    <string name="textViewemail">Email:</string>
+    <string name="textViewgender">Gender:</string>
+    <string name="textViewpass">Password:</string>
+    <string name="textViewrtpass">Retype Password:</string>
+    <string name="textViewnick">Nickname:</string>
+    <string name="textViewdifficulty">Starting Difficulty:</string>
+    <string name="textVieweasy">Easy</string>
+    <string name="textVieweasydesc">1 to 8,000 steps a day</string>
+    <string name="textViewmedium">Medium</string>
+    <string name="textViewmediumdesc">8,000 to 12,000 setps a day</string>
+    <string name="textViewhard">Hard</string>
+    <string name="textViewharddesc">12,000 or more steps a day</string>
+
+    /* Activity Settings */
+    <string name="textViewsettings">Settings</string>
+    <string name="textViewsound">Sound Effects:</string>
+    <string name="textViewoffers">Personalized Offers:</string>
+    <string name="textViewfacebook">Connect to Facebook:</string>
+    <string name="textViewlang">Languages:</string>
+    <string name="textViewnickname">Nickname:</string>
+
+
+    <string name="buttonhelp">Help and Support</string>
+    <string name="buttonnotify">Notifications</string>
+    <string name="buttonprivacy">Privacy</string>
+    <string name="buttonupdate">Update</string>
+    <string name="buttontos">Terms of Service</string>
+    <string name="buttondelete">Delete Account</string>
+    <string name="buttonrate">Rate This App</string>
+
+
+    /* Activity Inventory */
+    <string name="textViewItemshop" >ITEM SHOP</string>
+    <string name="textViewYouritems" >YOUR ITEMS</string>
+    <string name="textViewSquirrel" >mangy squirrel</string>
+    <string name="textViewStick" >pointy stick</string>
+    <string name="textViewBoots" >dusty boots</string>
+    <string name="textViewBalloon" >water balloon</string>
+    <string name="textViewQuantityPlaceholder1" >Quantity: 2</string>
+    <string name="textViewQuantityPlaceholder2" >Quantity: 1</string>
+    <string name="textViewQuantityPlaceholder3" >Quantity: 1</string>
+    <string name="buttonBuyPlaceholder1" >BUY</string>
+    <string name="buttonBuyPlaceholder2" >BUY</string>
+    <string name="buttonBuyPlaceholder3" >BUY</string>
+    <string name="buttonBuyPlaceholder4" >BUY</string>
+    <string name="buttonUsePlaceholder1" >USE</string>
+    <string name="buttonUsePlaceholder2" >USE</string>
+    <string name="buttonUsePlaceholder3" >USE</string>
+
+    /* Activity Login */
+    <string name="textViewEmail" >EMAIL:</string>
+    <string name="textViewPassword" >PASSWORD:</string>
+    <string name="buttonRegister" >Register</string>
+
+    /* Activity Main */
+    <string name="buttonInventory" >Inventory</string>
+    <string name="buttonTimeremaining" >Time Remaining</string>
+    <string name="buttonLogOut" >Log Out</string>
+    <string name="buttonLeaderboard" >Leaderboard</string>
+    <string name="textViewMonstertitle" >monster activity titles</string>
+    <string name="textViewMonsterdescriptions" >monster activity descriptions</string>
 </resources>
