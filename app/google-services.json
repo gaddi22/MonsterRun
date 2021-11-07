@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46382612214",
+    "firebase_url": "https://monster-run-a4649-default-rtdb.firebaseio.com",
+    "project_id": "monster-run-a4649",
+    "storage_bucket": "monster-run-a4649.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46382612214:android:fa2775ae3d0a0b9e1536d7",
+        "android_client_info": {
+          "package_name": "com.swoopsoft.monsterrun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46382612214-o1jlm968i1mk5l505fg8av7epcekbtg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG-RzSKWAtvonOLph2UFqtdj7pU0IJ33U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46382612214-o1jlm968i1mk5l505fg8av7epcekbtg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
