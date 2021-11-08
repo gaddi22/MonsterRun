@@ -1,7 +1,11 @@
 package com.swoopsoft.monsterrun.model;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Monster implements DataObject{
 
+    public  int distance;
     private DatabaseReference monsterRef;
     private DatabaseReference mDatabaseRef;
 

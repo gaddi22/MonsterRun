@@ -25,6 +25,7 @@ public class Player implements DataObject{
     public String username;
     public double money;
     private DatabaseReference progressRef;
+    public Monster monster;
 
     public List<Leaderboard> leaderboards;
 
