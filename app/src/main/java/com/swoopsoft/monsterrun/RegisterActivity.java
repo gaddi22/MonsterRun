@@ -4,15 +4,24 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+import com.swoopsoft.monsterrun.model.Leaderboard;
 import com.swoopsoft.monsterrun.model.Player;
 
 import java.util.ArrayList;
@@ -21,10 +30,14 @@ import java.util.HashMap;
 import kotlin.math.UMathKt;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
-    ImageView easy, medium, hard, imageView9,imageView10,imageView11;
-    EditText email, pwd, confpwd, gender, nickname;
-    TextView eTitle, eDesc, mTitle, mDesc, hTitle, hDesc;
-    String difficulty;
+    private final int FINISHED = 0;
+
+    private ImageView easy, medium, hard, imageView9,imageView10,imageView11;
+    private EditText email, pwd, confpwd, gender, nickname;
+    private TextView eTitle, eDesc, mTitle, mDesc, hTitle, hDesc;
+    private String difficulty;
+    private FirebaseUser fUser;
+
 
 
     @Override
@@ -32,6 +45,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        //check if user already signed in
+        fUser = FirebaseAuth.getInstance().getCurrentUser();
+        if(fUser != null){
+            moveToMain();
+        }
+
+        //bind user views
         email = findViewById(R.id.editTextEmail);
         pwd = findViewById(R.id.editTextTextPassword);
         confpwd = findViewById(R.id.editTextTextPassword2);
@@ -47,6 +67,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mDesc = findViewById(R.id.textView11);
         hDesc = findViewById(R.id.textView13);
 
+        //create tap listeners
         easy.setOnClickListener(this);
         eTitle.setOnClickListener(this);
         eDesc.setOnClickListener(this);
@@ -61,6 +82,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
+        //difficulty selection
         if(view == easy ||view == eTitle ||view == eDesc){
 
             if(emptyFields()){
@@ -70,8 +92,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             difficulty = "easy";
             registerUser();
 
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
         }
         if(view == medium ||view == mTitle ||view == mDesc){
 
@@ -82,8 +102,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             difficulty = "medium";
             registerUser();
 
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
         }
         if(view == hard ||view == hTitle ||view == hDesc){
 
@@ -93,13 +111,51 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             difficulty = "hard";
             registerUser();
-
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
         }
     }
 
+    //use when moving
+    private void moveToMain() {
+        setResult(FINISHED);
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
+    }
+
     private void registerUser() {
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email.getText().toString(),pwd.getText().toString())
+            .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                @Override
+                public void onSuccess(AuthResult authResult) {
+                    //create user object and add to database
+                    fUser = FirebaseAuth.getInstance().getCurrentUser();
+                    Player player = createPlayer();
+                    FirebaseDatabase.getInstance().getReference().child("players").setValue(fUser.getUid());
+                    player.update();
+                    moveToMain();
+                }
+            })
+            .addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(getApplicationContext(),"Failed to make user",Toast.LENGTH_LONG).show();
+                    Log.d("RegisterActivity",e.getMessage());
+                }
+            });
+
+    }
+
+    private Player createPlayer() {
+        HashMap statistics = new HashMap<String,Object>();
+        statistics.put("difficulty",difficulty);
+        statistics.put("gender",gender.getText().toString());
+        return new Player(
+                statistics,
+                fUser.getUid(),
+                fUser.getEmail(),
+                nickname.getText().toString(),
+                0,
+                new ArrayList<Leaderboard>()
+        );
     }
 
     private boolean emptyFields() {

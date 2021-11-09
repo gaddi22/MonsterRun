@@ -7,14 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button leaderboard, logout, time, inventory;
+    private Button leaderboard, logout, time, inventory;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        if(user == null){
+            startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+            finish();
+        }
 
         leaderboard = findViewById(R.id.leaderboard_btn);
         logout = findViewById(R.id.log_out_btn);
@@ -36,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(getApplicationContext(),InventoryActivity.class));
         }
         if(view == logout){
+            FirebaseAuth.getInstance().signOut();
+
             startActivity(new Intent(getApplicationContext(),LoginActivity.class));
             finish();
         }
