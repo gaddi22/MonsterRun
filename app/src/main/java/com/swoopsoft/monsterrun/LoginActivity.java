@@ -107,8 +107,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
              */
         }
         if(view == loginBtn){
-            //userLogin();
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            userLogin();
+
         }
     }
 }
