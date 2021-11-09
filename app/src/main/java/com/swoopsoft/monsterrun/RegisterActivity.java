@@ -147,6 +147,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private Player createPlayer() {
         HashMap statistics = new HashMap<String,Object>();
         statistics.put("difficulty",difficulty);
+        statistics.put("gender",gender.getText().toString());
         return new Player(
                 statistics,
                 fUser.getUid(),
