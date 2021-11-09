@@ -53,8 +53,8 @@
     <string name="textViewYouritems" >YOUR ITEMS</string>
     <string name="textViewSquirrel" >mangy squirrel</string>
     <string name="textViewStick" >pointy stick</string>
-    <string name="textViewBoots" >dusty boots</string>
-    <string name="textViewBalloon" >water balloon</string>
+    <string name="textViewBoot" >dusty boot</string>
+    <string name="textViewRagequit" >rage quit</string>
     <string name="textViewQuantityPlaceholder1" >Quantity: 2</string>
     <string name="textViewQuantityPlaceholder2" >Quantity: 1</string>
     <string name="textViewQuantityPlaceholder3" >Quantity: 1</string>
