@@ -3,4 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="main_menuButton_width">154dp</dimen>
+    <dimen name="item_fragment_width">120dp</dimen>
+    <dimen name="item_fragment_height">120dp</dimen>
 </resources>

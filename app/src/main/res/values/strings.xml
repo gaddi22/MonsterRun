@@ -49,35 +49,42 @@
 
 
     /* Activity Inventory */
-    <string name="textViewItemshop" >ITEM SHOP</string>
-    <string name="textViewYouritems" >YOUR ITEMS</string>
-    <string name="textViewSquirrel" >mangy squirrel</string>
-    <string name="textViewStick" >pointy stick</string>
-    <string name="textViewBoot" >dusty boot</string>
-    <string name="textViewRagequit" >rage quit</string>
-    <string name="textViewQuantityPlaceholder1" >Quantity: 2</string>
-    <string name="textViewQuantityPlaceholder2" >Quantity: 1</string>
-    <string name="textViewQuantityPlaceholder3" >Quantity: 1</string>
-    <string name="buttonBuyPlaceholder1" >BUY</string>
-    <string name="buttonBuyPlaceholder2" >BUY</string>
-    <string name="buttonBuyPlaceholder3" >BUY</string>
-    <string name="buttonBuyPlaceholder4" >BUY</string>
-    <string name="buttonUsePlaceholder1" >USE</string>
-    <string name="buttonUsePlaceholder2" >USE</string>
-    <string name="buttonUsePlaceholder3" >USE</string>
+    <string name="textViewItemshop">ITEM SHOP</string>
+    <string name="textViewYouritems">YOUR ITEMS</string>
+    <string name="textViewSquirrel">mangy squirrel</string>
+    <string name="textViewStick">pointy stick</string>
+    <string name="textViewBoot">dusty boot</string>
+    <string name="textViewRagequit">rage quit</string>
+    <string name="textViewQuantityPlaceholder1">Quantity: 2</string>
+    <string name="textViewQuantityPlaceholder2">Quantity: 1</string>
+    <string name="textViewQuantityPlaceholder3">Quantity: 1</string>
+    <string name="buttonBuyPlaceholder1">BUY</string>
+    <string name="buttonBuyPlaceholder2">BUY</string>
+    <string name="buttonBuyPlaceholder3">BUY</string>
+    <string name="buttonBuyPlaceholder4">BUY</string>
+    <string name="buttonUsePlaceholder1">USE</string>
+    <string name="buttonUsePlaceholder2">USE</string>
+    <string name="buttonUsePlaceholder3">USE</string>
 
     /* Activity Login */
-    <string name="textViewEmail" >EMAIL:</string>
-    <string name="textViewPassword" >PASSWORD:</string>
-    <string name="buttonRegister" >Register</string>
+    <string name="textViewEmail">EMAIL:</string>
+    <string name="textViewPassword">PASSWORD:</string>
+    <string name="buttonRegister">Register</string>
     <string name="register_link">Don\'t have an account? Tap here</string>
     <string name="buttonLogIn">Log In</string>
 
     /* Activity Main */
-    <string name="buttonInventory" >Inventory</string>
-    <string name="buttonTimeremaining" >Time Remaining</string>
-    <string name="buttonLogOut" >Log Out</string>
-    <string name="buttonLeaderboard" >Leaderboard</string>
-    <string name="textViewMonstertitle" >monster activity titles</string>
-    <string name="textViewMonsterdescriptions" >monster activity descriptions</string>
+    <string name="buttonInventory">Inventory</string>
+    <string name="buttonTimeremaining">Time Remaining</string>
+    <string name="buttonLogOut">Log Out</string>
+    <string name="buttonLeaderboard">Leaderboard</string>
+    <string name="textViewMonstertitle">monster activity titles</string>
+    <string name="textViewMonsterdescriptions">monster activity descriptions</string>
+    <string name="buttonSettings">Settings</string>
+
+    /* Item Fragment */
+    <string name="TextViewRageQuit">Rage Quit</string>
+    <string name="TextViewRageQuitDescription">Rage Quit Description</string>
+    <string name="buttonRageQuitBuy">BUY</string>
+
 </resources>
