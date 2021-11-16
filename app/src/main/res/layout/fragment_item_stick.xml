@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ItemFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".ItemFragmentStick">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,31 +14,20 @@
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="96dp"
-            android:text="@string/TextViewRageQuit"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="88dp"
+            android:text="@string/TextViewStick"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="@dimen/item_fragment_width"
-            android:layout_height="@dimen/item_fragment_height"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="96dp"
-            android:src="@drawable/controllerrrrr"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/TextViewRageQuitDescription"
+            android:layout_marginTop="44dp"
+            android:text="@string/TextViewStickDescription"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/textView21"
@@ -53,11 +40,21 @@
             android:layout_marginTop="68dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="72dp"
-            android:text="@string/buttonRageQuitBuy"
+            android:text="@string/buttonStickBuy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.515" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintVertical_bias="0.611" />
 
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="@dimen/item_fragment_width"
+            android:layout_height="@dimen/item_fragment_height"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/good_stick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

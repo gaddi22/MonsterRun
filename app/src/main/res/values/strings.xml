@@ -86,5 +86,21 @@
     <string name="TextViewRageQuit">Rage Quit</string>
     <string name="TextViewRageQuitDescription">Rage Quit Description</string>
     <string name="buttonRageQuitBuy">BUY</string>
+   
+
+    <string name="TextViewSquirrel">Mangy Squirrel</string>
+    <string name="TextViewSquirrelDescription">Mangy Squirrel Description</string>
+    <string name="buttonSquirrelBuy">BUY</string>
+
+
+    <string name="TextViewSpeedyJuice">Speedy Juice</string>
+    <string name="TextViewSpeedyJuiceDescription">Speedy Juice Description</string>
+    <string name="buttonSpeedyJuiceBuy">BUY</string>
+
+
+    <string name="TextViewStick">Pointy Stick</string>
+    <string name="TextViewStickDescription">Pointy Stick Description</string>
+    <string name="buttonStickBuy">BUY</string>
+
 
 </resources>
