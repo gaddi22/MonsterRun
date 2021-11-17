@@ -39,13 +39,13 @@
     <string name="textViewnickname">Nickname:</string>
 
 
-    <string name="buttonhelp">Help and Support</string>
-    <string name="buttonnotify">Notifications</string>
-    <string name="buttonprivacy">Privacy</string>
-    <string name="buttonupdate">Update</string>
-    <string name="buttontos">Terms of Service</string>
-    <string name="buttondelete">Delete Account</string>
-    <string name="buttonrate">Rate This App</string>
+    <string name="help_and_support_button">Help and Support</string>
+    <string name="notifications_button">Notifications</string>
+    <string name="privacy_button">Privacy</string>
+    <string name="update_button">Update</string>
+    <string name="terms_of_service_button">Terms of Service</string>
+    <string name="delete_account_button">Delete Account</string>
+    <string name="rate_this_app_button">Rate This App</string>
 
 
     /* Activity Inventory */

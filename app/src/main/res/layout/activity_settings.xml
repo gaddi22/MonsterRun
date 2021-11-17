@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#E91E63"
-            android:text="@string/buttondelete"
+            android:text="@string/delete_account_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -59,14 +59,14 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
-                android:text="@string/buttonnotify" />
+                android:text="@string/notifications_button" />
 
             <Button
                 android:id="@+id/update_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:text="@string/buttonupdate" />
+                android:text="@string/update_button" />
           </LinearLayout>
 
           <LinearLayout
@@ -83,15 +83,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:text="@string/buttonprivacy" />
+                android:text="@string/privacy_button" />
 
             <Button
-                android:id="@+id/button5se2"
+                android:id="@+id/terms_of_service_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
-                android:text="@string/buttontos" />
+                android:text="@string/terms_of_service_button" />
 
           </LinearLayout>
 
@@ -103,20 +103,20 @@
               android:orientation="vertical">
 
             <Button
-                android:id="@+id/button1se"
+                android:id="@+id/help_and_support_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="0dp"
                 android:layout_weight="1"
-                android:text="@string/buttonhelp" />
+                android:text="@string/help_and_support_button" />
 
             <Button
-                android:id="@+id/button7se"
+                android:id="@+id/rate_this_app_button"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
-                android:text="@string/buttonrate" />
+                android:text="@string/rate_this_app_button" />
 
           </LinearLayout>
 
