@@ -7,223 +7,248 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-  <Button
-      android:id="@+id/button4se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/buttonupdate"
-      app:layout_constraintBottom_toBottomOf="@+id/button5se"
-      app:layout_constraintEnd_toStartOf="@+id/button5se"
-      app:layout_constraintHorizontal_bias="0.444"
-      app:layout_constraintStart_toEndOf="@+id/button3se"
-      app:layout_constraintTop_toTopOf="@+id/button5se" />
-
-  <TextView
-      android:id="@+id/textView2se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/textViewsound"
-      app:layout_constraintBottom_toBottomOf="@+id/switch1"
-      app:layout_constraintEnd_toStartOf="@+id/switch1"
-      app:layout_constraintHorizontal_bias="0.2"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/switch1" />
-
-  <Switch
-      android:id="@+id/switch1"
-      android:layout_width="70dp"
-      android:layout_height="50dp"
-      app:layout_constraintBottom_toTopOf="@+id/switch2"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.765"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView1se"
-      app:layout_constraintVertical_bias="0.457"
-      tools:ignore="DuplicateSpeakableTextCheck" />
-
-  <Switch
-      android:id="@+id/switch2"
-      android:layout_width="70dp"
-      android:layout_height="50dp"
-      android:layout_marginTop="128dp"
-      app:layout_constraintBottom_toTopOf="@+id/switch3"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.555"
-      app:layout_constraintStart_toEndOf="@+id/textView3se"
-      app:layout_constraintTop_toBottomOf="@+id/imageView2"
-      app:layout_constraintVertical_bias="0.346" />
-
-  <Switch
-      android:id="@+id/switch3"
-      android:layout_width="70dp"
-      android:layout_height="50dp"
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.532"
-      app:layout_constraintStart_toEndOf="@+id/textView4se"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.499" />
-
-  <TextView
-      android:id="@+id/textView3se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/textViewoffers"
-      app:layout_constraintBottom_toBottomOf="@+id/switch2"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.105"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/switch2" />
+      app:layout_constraintTop_toTopOf="parent">
 
-  <TextView
-      android:id="@+id/textView4se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/textViewfacebook"
-      app:layout_constraintBottom_toBottomOf="@+id/switch3"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.109"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/switch3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-  <TextView
-      android:id="@+id/textView5se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/textViewlang"
-      app:layout_constraintBottom_toBottomOf="@+id/spinner"
-      app:layout_constraintEnd_toStartOf="@+id/spinner"
-      app:layout_constraintHorizontal_bias="0.424"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/spinner" />
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/StatisticsView"
+          android:layout_width="match_parent"
+          android:layout_height="716dp">
 
-  <Spinner
-      android:id="@+id/spinner"
-      android:layout_width="290dp"
-      android:layout_height="48dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.862"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.59" />
+        <Button
+            android:id="@+id/delete_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:text="@string/buttondelete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-  <TextView
-      android:id="@+id/textView6se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/textViewnickname"
-      app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.057"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
+        <LinearLayout
+            android:id="@+id/ButtonColumns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
 
-  <EditText
-      android:id="@+id/editTextTextPersonName3"
-      android:layout_width="215dp"
-      android:layout_height="58dp"
-      android:ems="10"
-      android:inputType="textPersonName"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.467"
-      app:layout_constraintStart_toEndOf="@+id/textView6se"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.696" />
+          <LinearLayout
+              android:id="@+id/Row1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical">
 
-  <Button
-      android:id="@+id/button1se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="4dp"
-      android:text="@string/buttonhelp"
-      app:layout_constraintBottom_toBottomOf="@+id/button2se"
-      app:layout_constraintEnd_toStartOf="@+id/button2se"
-      app:layout_constraintHorizontal_bias="0.266"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/button2se" />
+            <Button
+                android:id="@+id/notifications_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="@string/buttonnotify" />
 
-  <Button
-      android:id="@+id/button5se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="76dp"
-      android:text="@string/buttontos"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.961"
-      app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/buttonupdate" />
+          </LinearLayout>
 
-  <Button
-      android:id="@+id/button3se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/buttonprivacy"
-      app:layout_constraintBottom_toBottomOf="@+id/button4se"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.051"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/button4se"
-      app:layout_constraintVertical_bias="0.0" />
+          <LinearLayout
+              android:id="@+id/Row2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:paddingLeft="5dp"
+              android:paddingRight="5dp">
 
-  <Button
-      android:id="@+id/button2se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/buttonnotify"
-      app:layout_constraintBottom_toTopOf="@+id/button5se"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.965"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+            <Button
+                android:id="@+id/privacy_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/buttonprivacy" />
 
-  <Button
-      android:id="@+id/button6se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:backgroundTint="#E91E63"
-      android:text="@string/buttondelete"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.06"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.976" />
+            <Button
+                android:id="@+id/button5se2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:text="@string/buttontos" />
 
-  <Button
-      android:id="@+id/button7se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/buttonrate"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.728"
-      app:layout_constraintStart_toEndOf="@+id/button6se"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.976" />
+          </LinearLayout>
 
-  <ImageView
-      android:id="@+id/imageView2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      app:layout_constraintBottom_toTopOf="@+id/textView1se"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/settings_img" />
+          <LinearLayout
+              android:id="@+id/Row3"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical">
 
-  <TextView
-      android:id="@+id/textView1se"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/textViewsettings"
-      android:textSize="24sp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.498"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.224" />
+            <Button
+                android:id="@+id/button1se"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="0dp"
+                android:layout_weight="1"
+                android:text="@string/buttonhelp" />
+
+            <Button
+                android:id="@+id/button7se"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="@string/buttonrate" />
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewsound"
+            app:layout_constraintBottom_toBottomOf="@+id/switch1"
+            app:layout_constraintEnd_toStartOf="@+id/switch1"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/switch1" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.765"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1se2"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/switch1"
+            app:layout_constraintStart_toStartOf="@+id/switch1"
+            app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/switch2"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="@+id/switch2"
+            app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+        <TextView
+            android:id="@+id/textView3se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewoffers"
+            app:layout_constraintBottom_toBottomOf="@+id/switch2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/switch2" />
+
+        <TextView
+            android:id="@+id/textView4se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewfacebook"
+            app:layout_constraintBottom_toBottomOf="@+id/switch3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/switch3" />
+
+        <TextView
+            android:id="@+id/textView5se2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewlang"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner"
+            app:layout_constraintEnd_toStartOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch3" />
+
+        <TextView
+            android:id="@+id/textView6se"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewnickname"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settings_img" />
+
+        <TextView
+            android:id="@+id/textView1se2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/textViewsettings"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+  </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

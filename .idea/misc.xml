@@ -4,15 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_inventory.xml" value="0.25" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_login.xml" value="0.15217391304347827" />
         <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_main.xml" value="0.2749094202898551" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_register.xml" value="0.28125" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_statistics.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_boot.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_energy_juice.xml" value="0.22" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_squirrel.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/annie/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_stick.xml" value="0.1519756838905775" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_inventory.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_register.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_settings.xml" value="0.2" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/activity_statistics.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_blank.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item.xml" value="0.25" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item2.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_boot.xml" value="0.25" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_energy_juice.xml" value="0.33" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_list.xml" value="0.18414387031408308" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_squirrel.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_item_stick.xml" value="0.16394927536231885" />
+        <entry key="..\:/Users/clayt/AndroidStudioProjects/MonsterRun/app/src/main/res/layout/fragment_leaderboard.xml" value="0.2" />
       </map>
     </option>
   </component>
