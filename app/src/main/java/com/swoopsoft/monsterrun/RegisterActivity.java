@@ -137,7 +137,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             .addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(getApplicationContext(),"Failed to make user",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Failed to make user: " + e.getMessage(),Toast.LENGTH_LONG).show();
                     Log.d("RegisterActivity",e.getMessage());
                 }
             });
