@@ -5,20 +5,21 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Monster implements DataObject{
 
-    public  int distance;
+    public  double distance;
     private DatabaseReference monsterRef;
     private DatabaseReference mDatabaseRef;
 
     public String monsterID;
     public String name;
-    public String speed;
+    public long speed;
     public String icon;
     public String persistence;
     public String range;
     public String type;
     public String reward_pool;
 
-    public Monster(String id, String name, String speed, String icon, String persistence, String range, String type, String reward_pool){
+
+    public Monster(String id, String name, long speed, String icon, String persistence, String range, String type, String reward_pool){
         mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("monsters");
         monsterRef = FirebaseDatabase.getInstance().getReference("monsters/"+monsterID);
         monsterID = monsterRef.getKey();
