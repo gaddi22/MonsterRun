@@ -2,23 +2,98 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weekly_data_button"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StatisticsActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="586dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+                <TextView
+                    android:id="@+id/yourActivityStatistics"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/yourActivityStatistics"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintHorizontal_bias="0.611"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/daily_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/daily_data_button"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <Button
+                    android:id="@+id/weekly_data_statistics_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/weekly_data_statistics_button"
+                    app:layout_constraintEnd_toEndOf="@+id/daily_data"
+                    app:layout_constraintStart_toStartOf="@+id/daily_data"
+                    app:layout_constraintTop_toBottomOf="@+id/daily_data" />
+
+                <Button
+                    android:id="@+id/monthly_data_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/monthly_data_button"
+                    app:layout_constraintEnd_toEndOf="@+id/weekly_data_statistics_button"
+                    app:layout_constraintStart_toStartOf="@+id/weekly_data_statistics_button"
+                    app:layout_constraintTop_toBottomOf="@+id/weekly_data_statistics_button" />
+
+                <TextView
+                    android:id="@+id/goal_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/goal_center"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/monthly_data_button" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <include
                 layout="@layout/fragment_leaderboard"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="716dp" />
 
         </LinearLayout>
     </ScrollView>

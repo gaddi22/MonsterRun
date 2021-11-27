@@ -73,6 +73,14 @@
     <string name="register_link">Don\'t have an account? Tap here</string>
     <string name="buttonLogIn">Log In</string>
 
+    /* Activity Statistics */
+    <string name="yourActivityStatistics">Your Activity Statistics</string>
+    <string name="goal_center">Goal Center</string>
+
+    <string name="daily_data_button">Daily Data</string>
+    <string name="weekly_data_statistics_button">Weekly Data</string>
+    <string name="monthly_data_button">Monthly Data</string>
+
     /* Activity Main */
     <string name="buttonInventory">Inventory</string>
     <string name="buttonTimeremaining">Time Remaining</string>
