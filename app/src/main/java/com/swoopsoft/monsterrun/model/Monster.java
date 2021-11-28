@@ -11,14 +11,16 @@ public class Monster implements DataObject{
 
     public String monsterID;
     public String name;
-    public String speed;
+    public long speed;
     public String icon;
-    public String persistence;
-    public String range;
+    public double persistence;
+    public double range;
     public String type;
-    public String reward_pool;
+    public Item reward;
+    public date startTime;
 
-    public Monster(String id, String name, String speed, String icon, String persistence, String range, String type, String reward_pool){
+    public String Monster(String id, String name, long speed, String icon, double persistence, double range, String type, Item reward, date startTime){
+        this.startTime = startTime;
         mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("monsters");
         monsterRef = FirebaseDatabase.getInstance().getReference("monsters/"+monsterID);
         monsterID = monsterRef.getKey();
@@ -28,8 +30,43 @@ public class Monster implements DataObject{
         this.persistence = persistence;
         this. range = range;
         this. type = type;
-        this. reward_pool = reward_pool;
+        this. Item = reward;
+        this. date = startTime;
+
+     public String getName(){
+         return name;
+     }
+
+    public long getSpeed(){
+         return speed;
     }
+
+    public String getIcon(){
+         return icon;
+        }
+
+    public double getPersistence(){
+         return persistence;
+        }
+
+     public double getRange(){
+         return range;
+        }
+
+     public String getType(){
+         return type;
+        }
+
+    public Item getReward(){
+            return reward;
+        }
+
+    public Date getStartTime(){
+         return startTime;
+        }
+
+
+
 
     @Override
     public void update(){
