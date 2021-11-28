@@ -18,19 +18,19 @@
 
     <Button
         android:id="@+id/inventory_btn"
-        android:layout_width="134dp"
-        android:layout_height="49dp"
+        android:layout_width="@dimen/main_menuButton_width"
+        android:layout_height="50dp"
         android:text="@string/buttonInventory"
-        app:layout_constraintEnd_toEndOf="@+id/space"
+        app:layout_constraintEnd_toStartOf="@+id/space"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/time_remaining_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/space" />
 
     <Button
         android:id="@+id/leaderboard_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/main_menuButton_width"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
         android:text="@string/buttonLeaderboard"
-        app:layout_constraintEnd_toEndOf="@+id/inventory_btn"
         app:layout_constraintStart_toStartOf="@+id/inventory_btn"
         app:layout_constraintTop_toBottomOf="@+id/inventory_btn" />
 
@@ -56,12 +56,16 @@
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:layout_marginBottom="14dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/activity_bar__" />
 
             <LinearLayout
+                android:id="@+id/linearLayout2"
                 android:layout_width="407dp"
                 android:layout_height="338dp"
                 android:layout_marginStart="1dp"
@@ -112,23 +116,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/time_remaining_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/buttonTimeremaining"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/space"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <Button
         android:id="@+id/log_out_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/main_menuButton_width"
         android:layout_height="wrap_content"
         android:text="@string/buttonLogOut"
-        app:layout_constraintEnd_toEndOf="@+id/time_remaining_btn"
-        app:layout_constraintStart_toStartOf="@+id/time_remaining_btn"
-        app:layout_constraintTop_toBottomOf="@+id/time_remaining_btn" />
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        tools:layout_editor_absoluteY="179dp" />
 
     <Space
         android:id="@+id/space"
@@ -138,5 +131,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/main_menuButton_width"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buttonSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

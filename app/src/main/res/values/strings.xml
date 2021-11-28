@@ -39,45 +39,81 @@
     <string name="textViewnickname">Nickname:</string>
 
 
-    <string name="buttonhelp">Help and Support</string>
-    <string name="buttonnotify">Notifications</string>
-    <string name="buttonprivacy">Privacy</string>
-    <string name="buttonupdate">Update</string>
-    <string name="buttontos">Terms of Service</string>
-    <string name="buttondelete">Delete Account</string>
-    <string name="buttonrate">Rate This App</string>
+    <string name="help_and_support_button">Help and Support</string>
+    <string name="notifications_button">Notifications</string>
+    <string name="privacy_button">Privacy</string>
+    <string name="update_button">Update</string>
+    <string name="terms_of_service_button">Terms of Service</string>
+    <string name="delete_account_button">Delete Account</string>
+    <string name="rate_this_app_button">Rate This App</string>
 
 
     /* Activity Inventory */
-    <string name="textViewItemshop" >ITEM SHOP</string>
-    <string name="textViewYouritems" >YOUR ITEMS</string>
-    <string name="textViewSquirrel" >mangy squirrel</string>
-    <string name="textViewStick" >pointy stick</string>
-    <string name="textViewBoot" >dusty boot</string>
-    <string name="textViewRagequit" >rage quit</string>
-    <string name="textViewQuantityPlaceholder1" >Quantity: 2</string>
-    <string name="textViewQuantityPlaceholder2" >Quantity: 1</string>
-    <string name="textViewQuantityPlaceholder3" >Quantity: 1</string>
-    <string name="buttonBuyPlaceholder1" >BUY</string>
-    <string name="buttonBuyPlaceholder2" >BUY</string>
-    <string name="buttonBuyPlaceholder3" >BUY</string>
-    <string name="buttonBuyPlaceholder4" >BUY</string>
-    <string name="buttonUsePlaceholder1" >USE</string>
-    <string name="buttonUsePlaceholder2" >USE</string>
-    <string name="buttonUsePlaceholder3" >USE</string>
+    <string name="textViewItemshop">ITEM SHOP</string>
+    <string name="textViewYouritems">YOUR ITEMS</string>
+    <string name="textViewSquirrel">mangy squirrel</string>
+    <string name="textViewStick">pointy stick</string>
+    <string name="textViewBoot">dusty boot</string>
+    <string name="textViewRagequit">rage quit</string>
+    <string name="textViewQuantityPlaceholder1">Quantity: 2</string>
+    <string name="textViewQuantityPlaceholder2">Quantity: 1</string>
+    <string name="textViewQuantityPlaceholder3">Quantity: 1</string>
+    <string name="buttonBuyPlaceholder1">BUY</string>
+    <string name="buttonBuyPlaceholder2">BUY</string>
+    <string name="buttonBuyPlaceholder3">BUY</string>
+    <string name="buttonBuyPlaceholder4">BUY</string>
+    <string name="buttonUsePlaceholder1">USE</string>
+    <string name="buttonUsePlaceholder2">USE</string>
+    <string name="buttonUsePlaceholder3">USE</string>
 
     /* Activity Login */
-    <string name="textViewEmail" >EMAIL:</string>
-    <string name="textViewPassword" >PASSWORD:</string>
-    <string name="buttonRegister" >Register</string>
+    <string name="textViewEmail">EMAIL:</string>
+    <string name="textViewPassword">PASSWORD:</string>
+    <string name="buttonRegister">Register</string>
     <string name="register_link">Don\'t have an account? Tap here</string>
     <string name="buttonLogIn">Log In</string>
 
+    /* Activity Statistics */
+    <string name="yourActivityStatistics">Your Activity Statistics</string>
+    <string name="goal_center">Goal Center</string>
+
+    <string name="daily_data_button">Daily Data</string>
+    <string name="weekly_data_statistics_button">Weekly Data</string>
+    <string name="monthly_data_button">Monthly Data</string>
+
+    <string name="statistics_img">statistics img</string>
+    <string name="statistics_graph_placeholder">statistics graph placeholder</string>
+
     /* Activity Main */
-    <string name="buttonInventory" >Inventory</string>
-    <string name="buttonTimeremaining" >Time Remaining</string>
-    <string name="buttonLogOut" >Log Out</string>
-    <string name="buttonLeaderboard" >Leaderboard</string>
-    <string name="textViewMonstertitle" >monster activity titles</string>
-    <string name="textViewMonsterdescriptions" >monster activity descriptions</string>
+    <string name="buttonInventory">Inventory</string>
+    <string name="buttonTimeremaining">Time Remaining</string>
+    <string name="buttonLogOut">Log Out</string>
+    <string name="buttonLeaderboard">Leaderboard</string>
+    <string name="textViewMonstertitle">monster activity titles</string>
+    <string name="textViewMonsterdescriptions">monster activity descriptions</string>
+    <string name="buttonSettings">Settings</string>
+
+    /* Item Fragment */
+    <string name="TextViewRageQuit">Rage Quit</string>
+    <string name="TextViewRageQuitDescription">Rage Quit Description</string>
+    <string name="buttonRageQuitBuy">BUY</string>
+
+
+    <string name="TextViewSquirrel">Mangy Squirrel</string>
+    <string name="TextViewSquirrelDescription">Mangy Squirrel Description</string>
+    <string name="buttonSquirrelBuy">BUY</string>
+
+
+    <string name="TextViewSpeedyJuice">Speedy Juice</string>
+    <string name="TextViewSpeedyJuiceDescription">Speedy Juice Description</string>
+    <string name="buttonSpeedyJuiceBuy">BUY</string>
+
+
+    <string name="TextViewStick">Pointy Stick</string>
+    <string name="TextViewStickDescription">Pointy Stick Description</string>
+    <string name="buttonStickBuy">BUY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

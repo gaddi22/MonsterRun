@@ -22,9 +22,9 @@ public class Quest implements DataObject{
 
     public String questid;
     public String objective;
-    public String reward; //Item ID
+    public ArrayList<Item> reward; //Item ID
 
-    public Quest(String questid, String objective, String reward){
+    public Quest(String questid, String objective, ArrayList<Item> reward){
         mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("quests");
         questRef = FirebaseDatabase.getInstance().getReference("quests/"+questid);
         questid = questRef.getKey();

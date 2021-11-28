@@ -28,12 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         leaderboard = findViewById(R.id.leaderboard_btn);
         logout = findViewById(R.id.log_out_btn);
-        time = findViewById(R.id.time_remaining_btn);
         inventory = findViewById(R.id.inventory_btn);
 
         leaderboard.setOnClickListener(this);
         logout.setOnClickListener(this);
-        time.setOnClickListener(this);
         inventory.setOnClickListener(this);
     }
 
