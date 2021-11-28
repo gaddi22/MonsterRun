@@ -81,6 +81,9 @@
     <string name="weekly_data_statistics_button">Weekly Data</string>
     <string name="monthly_data_button">Monthly Data</string>
 
+    <string name="statistics_img">statistics img</string>
+    <string name="statistics_graph_placeholder">statistics graph placeholder</string>
+
     /* Activity Main */
     <string name="buttonInventory">Inventory</string>
     <string name="buttonTimeremaining">Time Remaining</string>

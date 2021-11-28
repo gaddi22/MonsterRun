@@ -31,6 +31,7 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
                     android:background="#FFFFFF"
+                    android:contentDescription="@string/statistics_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
@@ -96,6 +97,7 @@
                     android:layout_height="200dp"
                     android:layout_marginTop="32dp"
                     android:background="#FF8A80"
+                    android:contentDescription="@string/statistics_graph_placeholder"
                     app:layout_constraintEnd_toStartOf="@+id/weekly_data_statistics_button"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/yourActivityStatistics"
