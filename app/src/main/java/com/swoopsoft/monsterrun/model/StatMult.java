@@ -16,30 +16,26 @@ import java.util.Map;
 
 import com.firebase.ui.*;
 import com.google.firebase.database.Query;
-public class StatMult implements DataObject{
-    private DatabaseReference statRef;
-    private DatabaseReference mDatabaseRef;
+public class StatMult{
 
-    public String multiplierid;
     public double multiplier;
     public String statistic; //Stat ID
 
-    public StatMult(String multiplierid, double multiplier, String statistic){
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("stats_multiplier");
-        statRef = FirebaseDatabase.getInstance().getReference("stats_multiplier/"+multiplierid);
-        multiplierid = statRef.getKey();
-        this.multiplierid = multiplierid;
+    public StatMult(double multiplier, String statistic){
         this.multiplier = multiplier;
         this.statistic = statistic;
     }
 
-    @Override
-    public void update() {
-
+    public StatMult(){
+        multiplier = 1;
+        statistic = "";
     }
 
-    @Override
-    public void sync() {
+    public double getMultiplier() {
+        return multiplier;
+    }
 
+    public String getStatistic() {
+        return statistic;
     }
 }

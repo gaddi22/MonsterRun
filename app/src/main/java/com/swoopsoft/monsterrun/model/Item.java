@@ -7,34 +7,34 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class Item implements DataObject{
+public class Item{
 
-    private DatabaseReference itemRef;
-    private DatabaseReference mDatabaseRef;
-
-    public String item;
     public String name;
-    public List abilities;   //Abilities list
-    public String value;    //Currency value
+    public List<String> abilities;   //Abilities list
+    public long value;    //Currency value
 
-    public Item(String name, List abilities, String value){
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("items");
-        itemRef = FirebaseDatabase.getInstance().getReference("items/"+item);
-        item = itemRef.getKey();
+    public Item(){
+        name = "";
+        abilities = new ArrayList();
+        value = 0;
+    }
+
+    public Item(String name, List abilities, long value){
         this.name = name;
         this.abilities = abilities;
         this.value = value;
     }
 
-
-    @Override
-    public void update() {
-
+    public long getValue() {
+        return value;
     }
 
-    @Override
-    public void sync() {
+    public String getName() {
+        return name;
+    }
 
+    public List getAbilities() {
+        return abilities;
     }
 }
 

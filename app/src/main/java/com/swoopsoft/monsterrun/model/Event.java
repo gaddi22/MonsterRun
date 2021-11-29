@@ -3,40 +3,59 @@ package com.swoopsoft.monsterrun.model;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-public class Event implements DataObject{
+public class Event{
 
-    private DatabaseReference eventRef;
-    private DatabaseReference mDatabaseRef;
-
-    public String eventid;
     public String name;
-    public Date start_date;
-    public Date end_date;
+    public long start_date; //time in milliseconds
+    public long end_date;   //time in milliseconds
+    public List<String> quests;
+    public List<String> leaderboards;
+    public List<String> multipliers;
 
-    public Event(String id, String name, Date start_date, Date end_date){
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("events");
-        eventRef = FirebaseDatabase.getInstance().getReference("events/"+eventid);
-        eventid = eventRef.getKey();
+    public Event(){
+        name = "";
+        start_date = 0;
+        end_date = 0;
+        quests = new ArrayList<>();
+        leaderboards = new ArrayList<>();
+        multipliers = new ArrayList<>();
+    }
+
+    public Event(String name, long start_date, long end_date, List<String> quests, List<String> leaderboards, List<String> multipliers ){
         this.name = name;
         this.start_date = start_date;
         this.end_date = end_date;
+        this.quests = quests;
+        this.leaderboards = leaderboards;
+        this.multipliers = multipliers;
     }
 
-    @Override
-    public void update(){
-        eventRef = mDatabaseRef.push();
-        eventRef.child("name").setValue(name);
-        eventRef.child("start_date").setValue(start_date);
-        eventRef.child("end_Date").setValue(end_date);
+    public String getName(){
+        return name;
     }
 
-    @Override
-    public void sync(){
-        //TODO: download server data
-
+    public long getStart_date() {
+        return start_date;
     }
 
+    public long getEnd_date() {
+        return end_date;
+    }
+
+    public List<String> getLeaderboards() {
+        return leaderboards;
+    }
+
+    public List<String> getMultipliers() {
+        return multipliers;
+    }
+
+    public List<String> getQuests() {
+        return quests;
+    }
 }

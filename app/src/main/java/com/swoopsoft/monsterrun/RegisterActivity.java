@@ -1,7 +1,11 @@
 package com.swoopsoft.monsterrun;
 
+import static android.hardware.Sensor.TYPE_STEP_COUNTER;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -130,7 +134,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     fUser = FirebaseAuth.getInstance().getCurrentUser();
                     Player player = createPlayer();
                     FirebaseDatabase.getInstance().getReference().child("players").setValue(fUser.getUid());
-                    player.update();
                     moveToMain();
                 }
             })
@@ -150,11 +153,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         statistics.put("gender",gender.getText().toString());
         return new Player(
                 statistics,
-                fUser.getUid(),
                 fUser.getEmail(),
                 nickname.getText().toString(),
                 0,
-                new ArrayList<Leaderboard>()
+                new ArrayList<String>(),
+                new HashMap<String,Integer>(),
+                0
         );
     }
 

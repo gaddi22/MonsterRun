@@ -16,30 +16,26 @@ import java.util.Map;
 
 import com.firebase.ui.*;
 import com.google.firebase.database.Query;
-public class Quest implements DataObject{
-    private DatabaseReference questRef;
-    private DatabaseReference mDatabaseRef;
+public class Quest{
 
-    public String questid;
-    public String objective;
-    public ArrayList<Item> reward; //Item ID
+    public String objective;    //statistic name
+    public ArrayList<String> reward; //Item ID
 
-    public Quest(String questid, String objective, ArrayList<Item> reward){
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("quests");
-        questRef = FirebaseDatabase.getInstance().getReference("quests/"+questid);
-        questid = questRef.getKey();
-        this.questid = questid;
+    public Quest(String objective, ArrayList<String> reward){
         this.objective = objective;
         this.reward = reward;
     }
 
-    @Override
-    public void update() {
-
+    public Quest(){
+        objective = "";
+        reward = new ArrayList<String>();
     }
 
-    @Override
-    public void sync() {
+    public String getObjective() {
+        return objective;
+    }
 
+    public ArrayList<String> getReward() {
+        return reward;
     }
 }

@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Monsterrun">
+        <service
+            android:name=".MonsterRunService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".SensorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MonsterAlarmActivity"
+            android:exported="true" />
         <activity
             android:name=".StatisticsActivity"
             android:exported="true" />
         <activity
             android:name=".SettingsActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

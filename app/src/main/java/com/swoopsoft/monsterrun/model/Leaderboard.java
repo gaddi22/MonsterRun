@@ -6,38 +6,36 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Leaderboard implements DataObject {
-    private DatabaseReference leaderboardRef;
-    private DatabaseReference mDatabaseRef;
-    private DatabaseReference progressRef;
-
-    public Map<String, Object> rewards;
-    public String leaderboardID;
+public class Leaderboard {
+    public Map<Integer, String> rewards; //Bracket number, rewardID
     public String statsistic;
     public Map<String,Double> progress ; //PlayerID, Progress Amount
 
-    public Leaderboard(Map rewards, String statsistic){
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child("leaderboards");
-        leaderboardRef = FirebaseDatabase.getInstance().getReference("leaderboards/"+leaderboardID);
+    public Leaderboard(){
+        rewards = new HashMap<>();
+        statsistic = "";
+        progress = new HashMap<>();
+    }
 
+    public Leaderboard(Map rewards, String statsistic){
         this.rewards=rewards;
         this.statsistic = statsistic;
-        leaderboardID = leaderboardRef.getKey();
-
-        //create progress tracker
-        progressRef = leaderboardRef.child("progress");
+        HashMap progress = new HashMap();
     }
 
-    @Override
-    public void update(){
-        leaderboardRef = mDatabaseRef.push();
-        leaderboardRef.child("rewards").setValue(rewards);
-        leaderboardRef.child("leaderboardID").setValue(leaderboardID);
+    public String getStatsistic() {
+        return statsistic;
     }
 
-    @Override
-    public void sync(){
-        //TODO: download server data
+    public Map<Integer, String> getRewards() {
+        return rewards;
+    }
 
+    public Map<String, Double> getProgress() {
+        return progress;
+    }
+
+    public double getSpecificProgress(String playerID){
+        return progress.get(playerID);
     }
 }
