@@ -33,6 +33,8 @@
                     android:background="#FFFFFF"
                     android:contentDescription="@string/statistics_img"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/yourActivityStatistics"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
@@ -46,7 +48,7 @@
                     android:text="@string/yourActivityStatistics"
                     android:textSize="34sp"
                     app:layout_constraintEnd_toStartOf="@+id/imageView3"
-                    app:layout_constraintHorizontal_bias="0.611"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

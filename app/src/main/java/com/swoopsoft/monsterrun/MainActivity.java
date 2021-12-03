@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int monsterNum = rand.nextInt(monsters.size());
         player.monster = (Monster) monsters.get(monsterNum);
 
-        DatabaseController.updateObject(playerRef);
+        DatabaseController.updateObject(playerRef,player);
 
     }
 
