@@ -133,6 +133,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     //create user object and add to database
                     fUser = FirebaseAuth.getInstance().getCurrentUser();
                     Player player = createPlayer();
+                    HashMap userList = getUserList();
+
                     FirebaseDatabase.getInstance().getReference().child("players").setValue(fUser.getUid());
                     moveToMain();
                 }
@@ -145,6 +147,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 }
             });
 
+    }
+
+    private HashMap getUserList() {
+        DatabaseController.get
     }
 
     private Player createPlayer() {

@@ -25,7 +25,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button leaderboard, logout, time, inventory;
+    private Button leaderboard, logout, settings, inventory;
     private FirebaseUser user;
     private DatabaseReference userRef;
     private Player curPlayer;
@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         leaderboard = findViewById(R.id.leaderboard_btn);
         logout = findViewById(R.id.log_out_btn);
         inventory = findViewById(R.id.inventory_btn);
+        settings = findViewById(R.id.settings_button);
 
+        settings.setOnClickListener(this);
         leaderboard.setOnClickListener(this);
         logout.setOnClickListener(this);
         inventory.setOnClickListener(this);
@@ -68,8 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(getApplicationContext(),LoginActivity.class));
             finish();
         }
-        if(view == time){
-
+        if(view == settings){
+            startActivity(new Intent(getApplicationContext(),SettingsActivity.class));
         }
     }
 
