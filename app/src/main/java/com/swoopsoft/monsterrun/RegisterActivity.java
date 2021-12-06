@@ -133,9 +133,18 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     //create user object and add to database
                     fUser = FirebaseAuth.getInstance().getCurrentUser();
                     Player player = createPlayer();
-                    HashMap userList = getUserList();
-
-                    FirebaseDatabase.getInstance().getReference().child("players").setValue(fUser.getUid());
+                    DatabaseReference playersListRef = FirebaseDatabase.getInstance()
+                            .getReference().child("players");
+                    HashMap<String,Player> playerList =
+                            (HashMap<String, Player>) DatabaseController
+                                    .getObjectMap(playersListRef,Player.class);
+                    if(playerList == null){
+                        fUser.delete();
+                        Toast.makeText(getApplicationContext(),"Failed to make user, try again later",Toast.LENGTH_LONG).show();
+                        return;
+                    }
+                    playerList.put(fUser.getUid(), player);
+                    DatabaseController.updateObject(playersListRef,playerList);
                     moveToMain();
                 }
             })
@@ -147,10 +156,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 }
             });
 
-    }
-
-    private HashMap getUserList() {
-        DatabaseController.get
     }
 
     private Player createPlayer() {

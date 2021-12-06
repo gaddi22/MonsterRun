@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static void changeMonster(Player player, DatabaseReference playerRef){
         /*assign random monster from database template monsters*/
         DatabaseReference monsterListRef = FirebaseDatabase.getInstance().getReference().child("monsters");
-        ArrayList monsters = DatabaseController.getObjects(monsterListRef, Monster.class);
+        ArrayList monsters = DatabaseController.getObjectsList(monsterListRef, Monster.class);
 
         //randomly choose monster
         Random rand = new Random();
