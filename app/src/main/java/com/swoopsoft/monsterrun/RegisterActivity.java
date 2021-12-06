@@ -1,11 +1,6 @@
 package com.swoopsoft.monsterrun;
 
-import static android.hardware.Sensor.TYPE_STEP_COUNTER;
-
-import android.app.Activity;
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -16,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -24,14 +18,12 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.swoopsoft.monsterrun.model.Leaderboard;
 import com.swoopsoft.monsterrun.model.Player;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import kotlin.math.UMathKt;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     private final int FINISHED = 0;
@@ -126,7 +118,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void registerUser() {
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email.getText().toString(),pwd.getText().toString())
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(
+                email.getText().toString(),
+                pwd.getText().toString())
             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
                 public void onSuccess(AuthResult authResult) {

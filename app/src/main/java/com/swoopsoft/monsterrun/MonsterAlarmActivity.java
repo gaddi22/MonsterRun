@@ -52,7 +52,7 @@ public class MonsterAlarmActivity extends AppCompatActivity {
     }
 
     private void createCatchAlarm(Monster m,int playerSteps) {
-        //check if player is caught
+        //check if player is caught, ends this timer
         if(m.caughtPlayer(playerSteps)){
             MainActivity.changeMonster(player, playerRef);
             finish();
@@ -62,6 +62,7 @@ public class MonsterAlarmActivity extends AppCompatActivity {
 
         //if last alarm was less than five minutes ago
         if(lastAlarmTime<(System.currentTimeMillis()-(60000 * 5))){
+            //make
             createEscapeAlarm(m,playerSteps);
             AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
             long fiveMinutesInMillies = 60000 * 5;
@@ -70,6 +71,9 @@ public class MonsterAlarmActivity extends AppCompatActivity {
             alarmIntent.putExtra("monster",monsterRef.toString());
             alarmIntent.putExtra("player", playerRef.toString());
             //alarmManager.setExact(AlarmManager.RTC_WAKEUP,fiveMinutesInMillies, PendingIntent.getActivity(getApplicationContext(),2,));
+
+        }
+        else{
 
         }
 
